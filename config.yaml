@@ -1,0 +1,8 @@
+contentdir: "content"
+layoutdir: "layouts"
+publishdir: "public"
+indexes:
+  category: "categories"
+baseurl: "http://joyce04.github.io"
+title: "Joyce's GitHub Pages"
+canonifyurls: true

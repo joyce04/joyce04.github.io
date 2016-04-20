@@ -1,0 +1,39 @@
+# Site settings
+
+title: Joyce's Blog
+email: glee8804@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://joyce04/joyce04.github.io" # the base hostname & protocol for your site
+
+# User setting
+owner: 
+email:
+facebook_username:
+twitter_username:
+github_username: joyce04
+address:
+  - line:
+  - line:
+  # Feel free to add more lines here 
+telephone:
+copyright:
+
+# gems and other configs
+gems: [jekyll-paginate]
+exclude: [vendor]
+
+# Repositories path
+# Give the canonicalized absolute pathname,
+# REPOS_PATH MUST NOT CONTAIN ANY SYMLINK!!!
+# Check twice that none of the components is a symlink, including "/home".
+repos_path: "/Users/gracelee/workspace/github/joyce04.github.io"
+
+# API settings
+google_api_key: AIzaSyC9xVhqFpfvQh4MoGvusJuP_vSwM9xtT0k
+
+# Build settings
+markdown: kramdown

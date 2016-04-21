@@ -30,7 +30,7 @@ exclude: [vendor]
 # Give the canonicalized absolute pathname,
 # REPOS_PATH MUST NOT CONTAIN ANY SYMLINK!!!
 # Check twice that none of the components is a symlink, including "/home".
-repos_path: "/Users/gracelee/workspace/github/joyce04.github.io"
+# repos_path: "/Users/gracelee/workspace/github/joyce04.github.io"
 username: joyce04
 repo: joyce04.github.io
 branch: master
@@ -40,3 +40,14 @@ google_api_key: AIzaSyC9xVhqFpfvQh4MoGvusJuP_vSwM9xtT0k
 
 # Build settings
 markdown: kramdown
+
+
+exclude:
+  - README.md
+  - Rakefile
+  - Gemfile
+  - Gemfile.lock
+  - changelog.md
+  - "*.Rmd"
+  - vendor
+  - .travis.yml

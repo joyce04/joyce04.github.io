@@ -9,10 +9,13 @@ require 'rake'
 require 'date'
 require 'yaml'
 
-CONFIG = YAML.load(File.read('_config.yml'))
-USERNAME = CONFIG["username"]
-REPO = CONFIG["repo"]
-SOURCE_BRANCH = CONFIG["branch"]
+#CONFIG = YAML.load(File.read('_config.yml'))
+#USERNAME = CONFIG["username"]
+#REPO = CONFIG["repo"]
+#SOURCE_BRANCH = CONFIG["branch"]
+USERNAME = CONFIG["joyce04"]
+REPO = CONFIG["joyce04.github.io"]
+SOURCE_BRANCH = CONFIG["master"]
 DESTINATION_BRANCH = "gh-pages"
 
 def check_destination

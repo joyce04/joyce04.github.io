@@ -13,15 +13,17 @@ require 'yaml'
 #USERNAME = CONFIG["username"]
 #REPO = CONFIG["repo"]
 #SOURCE_BRANCH = CONFIG["branch"]
-USERNAME = CONFIG["joyce04"]
-REPO = CONFIG["joyce04.github.io"]
-SOURCE_BRANCH = CONFIG["master"]
+USERNAME = "joyce04"
+REPO = "joyce04.github.io"
+SOURCE_BRANCH = "master"
 DESTINATION_BRANCH = "gh-pages"
+#DESTINATION =  
 
 def check_destination
-  unless Dir.exist? CONFIG["destination"]
-    sh "git clone https://$GIT_NAME:$GH_TOKEN@github.com/#{USERNAME}/#{REPO}.git #{CONFIG["destination"]}"
-  end
+  #unless Dir.exist? CONFIG["destination"]
+    #sh "git clone https://$GIT_NAME:$GH_TOKEN@github.com/#{USERNAME}/#{REPO}.git #{CONFIG["destination"]}"
+    sh "git clone https://$GIT_NAME:$GH_TOKEN@github.com/#{USERNAME}/#{REPO}.git}"
+  #end
 end
 
 namespace :site do

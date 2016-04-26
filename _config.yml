@@ -34,6 +34,9 @@ exclude: [vendor]
 username: joyce04
 repo: joyce04.github.io
 branch: master
+destination: ../jasper-pages/
+production_url:  http://joyce04.github.io
+source_url:      https://github.com/joyce04/joyce04.github.io.git
 
 # API settings
 google_api_key: AIzaSyC9xVhqFpfvQh4MoGvusJuP_vSwM9xtT0k

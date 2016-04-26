@@ -5,11 +5,18 @@ rvm:
 #- 2.1
 - 2.1.1
 
+before_script:
+  - git config --global user.email "glee8804@gmail.com"
+  - git config --global user.name "joyce04"
+  - git remote rm origin
+  - git remote add origin https://user:${GH_TOKEN}@github.com/user/repo.git
+  
 install:
   # Install Jekyll and dependencies
   - bundle install
 
-script: bundle exec rake site:deploy --quiet #--trace
+#script: bundle exec rake site:deploy --quiet #--trace
+script: npm run deploy
 
 # Generate your secure token with the travis gem:
 # get Github token from your Travis CI profile page

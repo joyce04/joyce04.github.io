@@ -9,21 +9,21 @@ require 'rake'
 require 'date'
 require 'yaml'
 
-#CONFIG = YAML.load(File.read('_config.yml'))
-#USERNAME = CONFIG["username"]
-#REPO = CONFIG["repo"]
-#SOURCE_BRANCH = CONFIG["branch"]
-USERNAME = "joyce04"
-REPO = "joyce04.github.io"
-SOURCE_BRANCH = "master"
+CONFIG = YAML.load(File.read('_config.yml'))
+USERNAME = CONFIG["username"]
+REPO = CONFIG["repo"]
+SOURCE_BRANCH = CONFIG["branch"]
+#USERNAME = "joyce04"
+#REPO = "joyce04.github.io"
+#SOURCE_BRANCH = "master"
 DESTINATION_BRANCH = "gh-pages"
 #DESTINATION =  
 
 def check_destination
-  #unless Dir.exist? CONFIG["destination"]
-    #sh "git clone https://$GIT_NAME:$GH_TOKEN@github.com/#{USERNAME}/#{REPO}.git #{CONFIG["destination"]}"
-    sh "git clone https://$GIT_NAME:$GH_TOKEN@github.com/#{USERNAME}/#{REPO}.git}"
-  #end
+  unless Dir.exist? CONFIG["destination"]
+    sh "git clone https://$GIT_NAME:$GH_TOKEN@github.com/#{USERNAME}/#{REPO}.git #{CONFIG["destination"]}"
+    #sh "git clone https://$GIT_NAME:$GH_TOKEN@github.com/#{USERNAME}/#{REPO}.git}"
+  end
 end
 
 namespace :site do

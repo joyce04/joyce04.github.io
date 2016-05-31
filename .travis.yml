@@ -23,6 +23,7 @@ script: bundle exec rake site:deploy --quiet #--trace
 # gem install travis
 # GH_TOKEN from https://github.com/settings/tokens
 # travis encrypt 'GIT_NAME="YOUR_USERNAME" GIT_EMAIL="YOUR_EMAIL" GH_TOKEN=YOUR_TOKEN'
+travis encrypt GH_TOKEN="yw3vL7owUcSehBxyTy2H"
 env:
   global:
     #GH_REF: github.com/joyce04/joyce04.github.io

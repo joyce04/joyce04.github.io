@@ -14,7 +14,7 @@ install:
   # Install Jekyll and dependencies
   - bundle install
 
-script: bundle exec rake site:deploy --quiet #--trace
+script: bundle exec rake site:deploy # --quiet #--trace
 #script: npm run deploy
 
 # Generate your secure token with the travis gem:
@@ -29,6 +29,28 @@ env:
 branches:
   only:
     - master
+    
+def check_destination
+  unless Dir.exist? CONFIG["destination"]
+    sh "git clone https://#{ENV['GIT_NAME']}:#{ENV['GH_TOKEN']}@github.com/#{USERNAME}/#{REPO}.git #{CONFIG["destination"]}"
+  end
+end
+
+sh "git checkout #{SOURCE_BRANCH}"
+    Dir.chdir(CONFIG["destination"]) { sh "git checkout #{DESTINATION_BRANCH}" }
+
+sh "bundle exec jekyll build"
+
+sha = `git log`.match(/[a-z0-9]{40}/)[0]
+    Dir.chdir(CONFIG["destination"]) do
+      sh "git add --all ."
+      sh "git commit -m 'Updating to #{USERNAME}/#{REPO}@#{sha}.'"
+      
+      sh "git push origin #{DESTINATION_BRANCH}"
+      puts "Pushed updated branch #{DESTINATION_BRANCH} to GitHub Pages"
+    end
+  end
+end
 
 
 after_script:

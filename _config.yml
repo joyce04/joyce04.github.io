@@ -23,8 +23,8 @@ enable_nav: true
 nav_item:
   - { url: '/', text: 'Home' }
   - { url: '/about', text: 'About' }
-  - { url: '/blogs', text: 'Blog' }
-  - { url: '/projects', text: 'Projects' }
+  # - { url: '/blogs', text: 'Blog' }
+  # - { url: '/projects', text: 'Projects' }
 
 # Where things are
 source:      .

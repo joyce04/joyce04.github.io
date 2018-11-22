@@ -5,7 +5,7 @@ permalink: /about/
 ---
 ## About Grace Esther Lee (Heasoo)
 <br/>
-I'm a master student studying database and machine learning at **Seoul National University**. Before coming back to school, I've worked as a software engineer at **Samsung SDS** from 2014 to 2017 where I've learned so much from brilliant developers :heart_eyes: . While working at Samsung SDS, I've developed software systems ranging from Electronic Health Records System to Android mobile application for diabetic patients.
+I'm a master student studying database and machine learning at **Seoul National University**. Before coming back to school, I've worked as a software engineer at **Samsung SDS** from 2014 to 2017 where I've learned so much from brilliant developers. While working at Samsung SDS, I've developed software systems ranging from Electronic Health Records System to Android mobile application for diabetic patients.
 <br/>
 <br/>
 My current research focus is **extracting relational information** and building **Knowledge base construction** pipelines from unstructured data including text and xml data with **machine learning** and **natural language processing**.

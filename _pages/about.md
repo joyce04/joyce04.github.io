@@ -20,7 +20,7 @@ My current research focus is **extracting relational information** and building 
 
 <br/>
 
-### [Book List][/about/books]
+<!-- ### [Book List][/about/books] -->
 
 <br/>
 For more information, [refer to my resume](../resource/shorter_181014_Grace_resume.pdf)

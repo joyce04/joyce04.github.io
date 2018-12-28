@@ -24,7 +24,7 @@ nav_item:
   - { url: '/', text: 'Home' }
   - { url: '/about', text: 'About' }
   - { url: '/about/books', text: 'Books' }
-  # - { url: '/projects', text: 'Projects' }
+  - { url: '/about/paper_review', text: 'Paper Review' }
 
 # Where things are
 source:      .

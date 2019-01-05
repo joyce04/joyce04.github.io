@@ -51,3 +51,11 @@ Personal archive with Paper Review Presentations
   [DEC-ppt](https://www.slideshare.net/secret/MaxWl3H6o7pFe8)
 
   [DEC-code](https://github.com/joyce04/nlp/blob/master/embedding/1.%20DEC.ipynb)
+
+- General context-free recognition in less than cubic time.
+
+  1. Valiant, Leslie G. "General context-free recognition in less than cubic time." Journal of computer and system sciences 10.2 (1975): 308-315.
+
+  [Context-Free-Recog-ppt](https://www.slideshare.net/secret/qnCNlqUUh5C5mX)
+
+  [Context-Free-Recog-Explanation](https://github.com/joyce04/algorithm_practice/blob/master/context_free_language/context_free_language.md)

@@ -113,3 +113,6 @@ Personal archive with Paper Review Presentations
 - Kaushal, Kulendra Kumar, et al. "Patient Journey Visualizer: A Tool for Visualizing Patient Journeys." Machine Learning and Data Science (MLDS), 2017 International Conference on. IEEE, 2017.
   [Summary](https://github.com/joyce04/medical_informatics/blob/master/mdml/related_paper/patient_journey_visualizer.md)
 
+- Perer, Adam, Fei Wang, and Jianying Hu. "Mining and exploring care pathways from electronic medical records with visual analytics." *Journal of biomedical informatics* 56 (2015): 369-378.
+  [Summary](https://github.com/joyce04/medical_informatics/blob/master/mdml/related_paper/Mining%20and%20exploring%20care%20pathways%20from%20electronic%20medical%20records%20with%20visual%20analytics.md)
+

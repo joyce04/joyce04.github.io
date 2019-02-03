@@ -87,8 +87,7 @@ Personal archive with Paper Review Presentations
 <br>
 
 
-##### 2019
-<br>
+##### 2019 <br>
 - Sheetrit, Eitam, et al. "Temporal Pattern Discovery for Accurate Sepsis Diagnosis in ICU Patients." *arXiv preprint arXiv:1709.01720* (2017).
   [Summary](https://github.com/joyce04/medical_informatics/blob/master/mdml/related_paper/Temporal%20Pattern%20Discovery%20for%20Accurate%20Sepsis%20Diagnosis%20in%20ICU%20Patients.md)
 <br>
@@ -97,3 +96,7 @@ Personal archive with Paper Review Presentations
 <br>
 - Perer, Adam, Fei Wang, and Jianying Hu. "Mining and exploring care pathways from electronic medical records with visual analytics." *Journal of biomedical informatics* 56 (2015): 369-378.
   [Summary](https://github.com/joyce04/medical_informatics/blob/master/mdml/related_paper/Mining%20and%20exploring%20care%20pathways%20from%20electronic%20medical%20records%20with%20visual%20analytics.md)
+
+- Johnson, Alistair EW, et al. "A Comparative Analysis of Sepsis Identification Methods in an Electronic Database." *Critical care medicine* 46.4 (2018): 494-499.
+  [Summary](https://github.com/joyce04/medical_informatics/blob/master/mdml/related_paper/Comparative%20Analysis%20of%20Sepsis%20Identification%20Methods%20in%20an%20Electronic%20Database.md)
+

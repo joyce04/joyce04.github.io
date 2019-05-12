@@ -58,8 +58,7 @@ Personal archive with Paper Review Presentations
   [Summary](https://github.com/joyce04/medical_informatics/blob/master/mdml/related_paper/Prioritizing%20adverse%20drug%20reaction%20and%20drug%20repositioning%20candidates%20generated%20by%20literature-based%20discovery.md)
 <br>
 - Manchanda, Sahil, and Ashish Anand. "Representation learning of drug and disease terms for drug repositioning." *Cybernetics (CYBCONF), 2017 3rd IEEE International Conference on*. IEEE, 2017.
-  [Summary](https://github.com/joyce04/medical_informatics/blob/master/mdml/related_paper/Representation%20learning%20of%20drug%20and%20disease%20terms%20for%20drug%20repositioning.md)
-<br>
+  [Summary](https://github.com/joyce04/medical_informatics/blob/master/mdml/related_paper/Representation%20learning%20of%20drug%20and%20disease%20terms%20for%20drug%20repositioning.md)<br>
 <br>
 <br>
 #### 2019
@@ -72,8 +71,7 @@ Personal archive with Paper Review Presentations
 ##### Visualization
 <br>
 - Kwon, Bum Chul, et al. "Clustervision: Visual supervision of unsupervised clustering." IEEE transactions on visualization and computer graphics 24.1 (2018): 142-151.<br>
-  [Summary](https://github.com/joyce04/medical_informatics/blob/master/mdml/related_paper/Clustervision%20Visual%20supervision%20of%20unsupervised%20clustering.md)
-<br>
+  [Summary](https://github.com/joyce04/medical_informatics/blob/master/mdml/related_paper/Clustervision%20Visual%20supervision%20of%20unsupervised%20clustering.md)<br>
 ##### Medical Informatics <br>
 - Zeng, Zexian, et al. "Natural language processing for EHR-based computational phenotyping." IEEE/ACM transactions on computational biology and bioinformatics 16.1 (2019): 139-153.<br>
   [NLP_EHR-ppt](https://www.slideshare.net/secret/lwui3fIFj4Mwqx)<br>

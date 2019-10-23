@@ -61,17 +61,27 @@ Personal archive with Paper Review Presentations
   [Summary](https://github.com/joyce04/medical_informatics/blob/master/mdml/related_paper/Representation%20learning%20of%20drug%20and%20disease%20terms%20for%20drug%20repositioning.md)<br>
 <br>
 <br>
+
 #### 2019
 <br>
 ##### Knowledge Graph
 <br>
 - Gad-Elrab, Mohamed H., et al. "ExFaKT: A Framework for Explaining Facts over Knowledge Graphs and Text." Proceedings of the Twelfth ACM International Conference on Web Search and Data Mining. ACM, 2019.<br>
 [Exfakt KG-ppt](https://www.slideshare.net/secret/7SKhoTkqfz1PEa)<br>
+- ConceptNet <br>
+[1] Speer, Robert, Joshua Chin, and Catherine Havasi. "Conceptnet 5.5: An open multilingual graph of general knowledge." Thirty-First AAAI Conference on Artificial Intelligence. 2017.<br>
+[2] Speer, Robert, and Catherine Havasi. "ConceptNet 5: A large semantic network for relational knowledge." The People’s Web Meets NLP. Springer, Berlin, Heidelberg, 2013. 161-176.<br>
+[3] Speer, Robert, and Joanna Lowry-Duda. "Conceptnet at semeval-2017 task 2: Extending word embeddings with multilingual relational knowledge." arXiv preprint arXiv:1704.03560 (2017).<br>
+[4] Speer, Robert, and Catherine Havasi. "Representing General Relational Knowledge in ConceptNet 5." LREC. 2012. <br>
+[5] Faruqui, Manaal, et al. "Retrofitting word vectors to semantic lexicons." arXiv preprint arXiv:1411.4166 (2014).<br>
+[ConceptNet-ppt](https://www.slideshare.net/secret/3GmQvq7seVmZ2V)<br>
 <br>
-##### Visualization
+- Christopoulou, Fenia, Makoto Miwa, and Sophia Ananiadou. "Connecting the Dots: Document-level Neural Relation Extraction with Edge-oriented Graphs." EMNLP (2019). <br>
+##### HCI
 <br>
 - Kwon, Bum Chul, et al. "Clustervision: Visual supervision of unsupervised clustering." IEEE transactions on visualization and computer graphics 24.1 (2018): 142-151.<br>
   [Summary](https://github.com/joyce04/medical_informatics/blob/master/mdml/related_paper/Clustervision%20Visual%20supervision%20of%20unsupervised%20clustering.md)<br>
+<br>
 ##### Medical Informatics <br>
 - Zeng, Zexian, et al. "Natural language processing for EHR-based computational phenotyping." IEEE/ACM transactions on computational biology and bioinformatics 16.1 (2019): 139-153.<br>
   [NLP_EHR-ppt](https://www.slideshare.net/secret/lwui3fIFj4Mwqx)<br>
@@ -93,4 +103,4 @@ Personal archive with Paper Review Presentations
   [Summary](https://github.com/joyce04/medical_informatics/blob/master/mdml/related_paper/Representation%20learning%20of%20drug%20and%20disease%20terms%20for%20drug%20repositioning.md)<br>
 - Perrotta, Daniela, Michele Tizzoni, and Daniela Paolotti. "Using participatory Web-based surveillance data to improve seasonal influenza forecasting in Italy." Proceedings of the 26th International Conference on World Wide Web. International World Wide Web Conferences Steering Committee, 2017.<br>
   [Summary](https://github.com/joyce04/medical_informatics/blob/master/mdml/related_paper/Using%20participatory%20Web-based%20surveillance%20data%20to%20improve%20seasonal%20influenza%20forecasting%20in%20Italy.md)<br>
-
+<br>

@@ -65,4 +65,6 @@ As shown in [figure 3], there are over 320, 846 trial records in clinicaltrials.
 
 **Additional References**:
 
-[1] Fanshawe, Thomas R., and Rafael Perera. "Automatic extraction of quantitative data from ClinicalTrials. gov to conduct meta-analyses." *BMJ evidence-based medicine*(2019): bmjebm-2019.
+[1] Fanshawe, Thomas R., and Rafael Perera. "Automatic extraction of quantitative data from ClinicalTrials. gov to conduct meta-analyses." *BMJ evidence-based medicine*(2019): bmjebm-2019. <br>
+
+[2] Hao, Tianyong, et al. "Clustering clinical trials with similar eligibility criteria features." *Journal of biomedical informatics*52 (2014): 112-120.

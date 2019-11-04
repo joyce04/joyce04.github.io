@@ -29,7 +29,8 @@ Starting from evaluating the change of strategies of different characteristics o
 
 <br>
 
-**Analysis Tools**: If provided, it is useful to utilize existing tools for faster analysis. There are multiple publications analyzing clinical trial data.
+**Analysis Tools**: If provided, it is useful to utilize existing tools for faster analysis. There are multiple publications on analyzing clinical trial data with tools.
+
 (1)EXACT from BioNLP of Univ. Massachusetts.
 
 <br>

@@ -13115,13 +13115,17 @@ div#notebook {
 
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[43]:</div>
+<div class="prompt input_prompt">In&nbsp;[156]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">xml.etree.ElementTree</span> <span class="k">as</span> <span class="nn">elemTree</span>
 <span class="kn">from</span> <span class="nn">xml.dom</span> <span class="k">import</span> <span class="n">minidom</span>
 <span class="kn">import</span> <span class="nn">os</span>
 <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">matplotlib</span> <span class="k">as</span> <span class="nn">mpl</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pylab</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">from</span> <span class="nn">tabulate</span> <span class="k">import</span> <span class="n">tabulate</span>
+
 <span class="n">pd</span><span class="o">.</span><span class="n">set_option</span><span class="p">(</span><span class="s1">&#39;display.max_rows&#39;</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
 <span class="n">pd</span><span class="o">.</span><span class="n">set_option</span><span class="p">(</span><span class="s1">&#39;display.max_columns&#39;</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
 <span class="n">pd</span><span class="o">.</span><span class="n">set_option</span><span class="p">(</span><span class="s1">&#39;display.width&#39;</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
@@ -13135,7 +13139,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[105]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">FILE_LOC</span> <span class="o">=</span> <span class="s1">&#39;./dataset/AllPublicXML/&#39;</span>
@@ -13148,7 +13152,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[106]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># only industrial companies</span>
@@ -13163,7 +13167,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[107]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">find_element</span><span class="p">(</span><span class="n">root</span><span class="p">,</span> <span class="n">element_tag</span><span class="p">):</span>
@@ -13181,7 +13185,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[22]:</div>
+<div class="prompt input_prompt">In&nbsp;[109]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">find_xml_for_company</span><span class="p">(</span><span class="n">file_loc</span><span class="p">,</span> <span class="n">company_name</span><span class="p">,</span> <span class="n">num</span><span class="p">):</span>
@@ -13217,7 +13221,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[86]:</div>
+<div class="prompt input_prompt">In&nbsp;[110]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">find_xml_for_company</span><span class="p">(</span><span class="n">FILE_LOC</span><span class="p">,</span> <span class="s1">&#39;LEO Pharma&#39;</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
@@ -13720,7 +13724,7 @@ NCT01935869.xml
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[88]:</div>
+<div class="prompt input_prompt">In&nbsp;[112]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">intervention_type</span>
@@ -13736,7 +13740,7 @@ NCT01935869.xml
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[88]:</div>
+    <div class="prompt output_prompt">Out[112]:</div>
 
 
 
@@ -13763,7 +13767,7 @@ NCT01935869.xml
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[89]:</div>
+<div class="prompt input_prompt">In&nbsp;[113]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">len</span><span class="p">(</span><span class="n">intervention_names</span><span class="p">)</span>
@@ -13779,7 +13783,7 @@ NCT01935869.xml
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[89]:</div>
+    <div class="prompt output_prompt">Out[113]:</div>
 
 
 
@@ -13796,7 +13800,7 @@ NCT01935869.xml
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[94]:</div>
+<div class="prompt input_prompt">In&nbsp;[114]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_ind</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">industrial_data</span><span class="p">)</span>
@@ -13813,7 +13817,7 @@ NCT01935869.xml
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[94]:</div>
+    <div class="prompt output_prompt">Out[114]:</div>
 
 
 
@@ -13830,7 +13834,7 @@ NCT01935869.xml
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[95]:</div>
+<div class="prompt input_prompt">In&nbsp;[115]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_ind</span><span class="o">.</span><span class="n">columns</span>
@@ -13846,7 +13850,7 @@ NCT01935869.xml
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[95]:</div>
+    <div class="prompt output_prompt">Out[115]:</div>
 
 
 
@@ -13865,7 +13869,7 @@ NCT01935869.xml
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[96]:</div>
+<div class="prompt input_prompt">In&nbsp;[116]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_ind</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
@@ -13881,7 +13885,7 @@ NCT01935869.xml
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[96]:</div>
+    <div class="prompt output_prompt">Out[116]:</div>
 
 
 
@@ -13995,7 +13999,7 @@ NCT01935869.xml
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[97]:</div>
+<div class="prompt input_prompt">In&nbsp;[117]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_ind</span><span class="p">[</span><span class="n">df_ind</span><span class="o">.</span><span class="n">file_source</span><span class="o">==</span><span class="s1">&#39;NCT02836028.xml&#39;</span><span class="p">]</span>
@@ -14011,7 +14015,7 @@ NCT01935869.xml
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[97]:</div>
+    <div class="prompt output_prompt">Out[117]:</div>
 
 
 
@@ -14099,7 +14103,7 @@ NCT01935869.xml
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[99]:</div>
+<div class="prompt input_prompt">In&nbsp;[118]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Top ten companies with clinical trial counts</span>
@@ -14117,7 +14121,7 @@ NCT01935869.xml
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[99]:</div>
+    <div class="prompt output_prompt">Out[118]:</div>
 
 
 
@@ -14297,6 +14301,114 @@ NCT01935869.xml
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
+<div class="prompt input_prompt">In&nbsp;[131]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">y</span> <span class="o">=</span> <span class="n">ind_count</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">],</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)[:</span><span class="mi">30</span><span class="p">]</span><span class="o">.</span><span class="n">condition</span>
+<span class="n">x</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="p">[:</span><span class="mi">8</span><span class="p">]</span><span class="o">+</span><span class="s1">&#39;...&#39;</span><span class="p">,</span> <span class="n">ind_count</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">],</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)[:</span><span class="mi">30</span><span class="p">]</span><span class="o">.</span><span class="n">index</span><span class="p">))</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">30</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Top 30 of indutrial companies for clinical trials&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;company&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;# of clinical trials&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[131]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&lt;Figure size 2160x360 with 0 Axes&gt;</pre>
+</div>
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[131]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>Text(0.5, 1.0, &#39;Top 30 of indutrial companies for clinical trials&#39;)</pre>
+</div>
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[131]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&lt;BarContainer object of 30 artists&gt;</pre>
+</div>
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[131]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>Text(0.5, 0, &#39;company&#39;)</pre>
+</div>
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[131]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>Text(0, 0.5, &#39;# of clinical trials&#39;)</pre>
+</div>
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+
+<div class="output_png output_subarea ">
+<img src="data:image/png;base64,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
+"
+>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
 <div class="prompt input_prompt">In&nbsp;[101]:</div>
 <div class="inner_cell">
     <div class="input_area">
@@ -14325,6 +14437,403 @@ NCT01935869.xml
        &#39;Probiotic ES1, Placebo&#39;], dtype=object)</pre>
 </div>
 
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[145]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># df_ind.type.unique()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[146]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">interv_types</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">grp</span><span class="p">,</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">df_ind</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;industry&#39;</span><span class="p">):</span>
+<span class="c1">#     print(grp)</span>
+    <span class="n">company_types</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;company&#39;</span><span class="p">:</span><span class="n">grp</span><span class="p">,</span> <span class="s1">&#39;Device&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;Drug&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;Biological&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;Dietary Supplement&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;Behavioral&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;Procedure&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;Other&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;Radiation&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;Genetic&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;Diagnostic Test&#39;</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;Combination Product&#39;</span><span class="p">:</span><span class="mi">0</span><span class="p">}</span>
+    <span class="k">for</span> <span class="n">r</span> <span class="ow">in</span> <span class="n">row</span><span class="o">.</span><span class="n">itertuples</span><span class="p">():</span>
+        <span class="k">if</span> <span class="n">r</span><span class="o">.</span><span class="n">type</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">types</span> <span class="o">=</span> <span class="n">r</span><span class="o">.</span><span class="n">type</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;, &#39;</span><span class="p">)</span>
+            <span class="k">for</span> <span class="n">t</span> <span class="ow">in</span> <span class="n">types</span><span class="p">:</span>
+                <span class="n">company_types</span><span class="p">[</span><span class="n">t</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="n">interv_types</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">company_types</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[148]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_com_type</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">interv_types</span><span class="p">)</span>
+<span class="n">df_com_type</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[148]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Behavioral</th>
+      <th>Biological</th>
+      <th>Combination Product</th>
+      <th>Device</th>
+      <th>Diagnostic Test</th>
+      <th>Dietary Supplement</th>
+      <th>Drug</th>
+      <th>Genetic</th>
+      <th>Other</th>
+      <th>Procedure</th>
+      <th>Radiation</th>
+      <th>company</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>4</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>2</td>
+      <td>0</td>
+      <td>0</td>
+      <td>3-C Institute for Social Development</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>3D Medicines (Sichuan) Co., Ltd.</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>3DRPD Inc.</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>2</td>
+      <td>0</td>
+      <td>0</td>
+      <td>4D pharma plc</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>A&amp;G Pharmaceutical</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[162]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_com_type</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">df_com_type</span><span class="p">[</span><span class="s1">&#39;Combination Product&#39;</span><span class="p">]</span><span class="o">&gt;</span><span class="mi">0</span><span class="p">]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[162]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Behavioral</th>
+      <th>Biological</th>
+      <th>Combination Product</th>
+      <th>Device</th>
+      <th>Diagnostic Test</th>
+      <th>Dietary Supplement</th>
+      <th>Drug</th>
+      <th>Genetic</th>
+      <th>Other</th>
+      <th>Procedure</th>
+      <th>Radiation</th>
+      <th>company</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>151</th>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>BSN Medical GmbH</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[163]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">cols</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">df_com_type</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span>
+<span class="n">cols</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="s1">&#39;company&#39;</span><span class="p">)</span>
+<span class="n">cols</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="s1">&#39;Combination Product&#39;</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">cols</span><span class="p">:</span>
+<span class="c1">#     print(df_com_type.sort_values(by=[c], ascending=False)[:5])</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">tabulate</span><span class="p">(</span><span class="n">df_com_type</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="p">[</span><span class="n">c</span><span class="p">],</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)[:</span><span class="mi">5</span><span class="p">],</span> <span class="n">headers</span><span class="o">=</span><span class="s1">&#39;keys&#39;</span><span class="p">,</span> <span class="n">tablefmt</span><span class="o">=</span><span class="s1">&#39;psql&#39;</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Behavioral
++------+--------------+--------------+-----------------------+----------+-------------------+----------------------+--------+-----------+---------+-------------+-------------+--------------------------------------+
+|      |   Behavioral |   Biological |   Combination Product |   Device |   Diagnostic Test |   Dietary Supplement |   Drug |   Genetic |   Other |   Procedure |   Radiation | company                              |
+|------+--------------+--------------+-----------------------+----------+-------------------+----------------------+--------+-----------+---------+-------------+-------------+--------------------------------------|
+|    0 |            4 |            0 |                     0 |        0 |                 0 |                    0 |      0 |         0 |       2 |           0 |           0 | 3-C Institute for Social Development |
+| 1116 |            4 |            0 |                     0 |        0 |                 0 |                    0 |      0 |         0 |       0 |           0 |           0 | my mhealth Ltd                       |
+| 1073 |            4 |            0 |                     0 |        0 |                 0 |                    0 |      0 |         0 |       0 |           0 |           0 | Virtually Better, Inc.               |
+|  289 |            4 |            0 |                     0 |        0 |                 0 |                    0 |      0 |         0 |       0 |           0 |           0 | Coeus Health, LLC                    |
+|   63 |            3 |            0 |                     0 |        0 |                 0 |                    0 |      0 |         0 |       0 |           0 |           0 | Alere Wellbeing                      |
++------+--------------+--------------+-----------------------+----------+-------------------+----------------------+--------+-----------+---------+-------------+-------------+--------------------------------------+
+Biological
++-----+--------------+--------------+-----------------------+----------+-------------------+----------------------+--------+-----------+---------+-------------+-------------+---------------------------+
+|     |   Behavioral |   Biological |   Combination Product |   Device |   Diagnostic Test |   Dietary Supplement |   Drug |   Genetic |   Other |   Procedure |   Radiation | company                   |
+|-----+--------------+--------------+-----------------------+----------+-------------------+----------------------+--------+-----------+---------+-------------+-------------+---------------------------|
+| 218 |            0 |           19 |                     0 |        0 |                 0 |                    0 |     95 |         0 |      15 |           1 |           4 | Bristol-Myers Squibb      |
+| 694 |            0 |           17 |                     0 |        1 |                 0 |                    0 |     83 |         0 |       6 |           5 |           3 | Merck Sharp &amp; Dohme Corp. |
+| 465 |            0 |           13 |                     0 |        2 |                 0 |                    0 |     75 |         0 |      12 |           2 |           0 | GlaxoSmithKline           |
+| 186 |            0 |           13 |                     0 |        0 |                 0 |                    0 |      7 |         0 |       2 |           0 |           0 | Biocad                    |
+| 823 |            0 |           10 |                     0 |        0 |                 0 |                    0 |    122 |         0 |       4 |           2 |           0 | Pfizer                    |
++-----+--------------+--------------+-----------------------+----------+-------------------+----------------------+--------+-----------+---------+-------------+-------------+---------------------------+
+Device
++------+--------------+--------------+-----------------------+----------+-------------------+----------------------+--------+-----------+---------+-------------+-------------+-------------------------------------+
+|      |   Behavioral |   Biological |   Combination Product |   Device |   Diagnostic Test |   Dietary Supplement |   Drug |   Genetic |   Other |   Procedure |   Radiation | company                             |
+|------+--------------+--------------+-----------------------+----------+-------------------+----------------------+--------+-----------+---------+-------------+-------------+-------------------------------------|
+|   60 |            0 |            0 |                     0 |       15 |                 0 |                    0 |      6 |         0 |       0 |           1 |           0 | Alcon Research                      |
+|  210 |            0 |            0 |                     0 |       11 |                 0 |                    0 |      1 |         0 |       2 |           6 |           0 | Boston Scientific Corporation       |
+| 1105 |            0 |            0 |                     0 |       11 |                 0 |                    0 |      0 |         0 |       0 |           1 |           0 | Zimmer Biomet                       |
+|   19 |            0 |            0 |                     0 |       11 |                 0 |                    0 |      5 |         0 |       2 |           6 |           0 | Abbott Medical Devices              |
+|  585 |            0 |            0 |                     0 |        9 |                 0 |                    0 |      0 |         0 |       0 |           0 |           0 | Johnson &amp; Johnson Vision Care, Inc. |
++------+--------------+--------------+-----------------------+----------+-------------------+----------------------+--------+-----------+---------+-------------+-------------+-------------------------------------+
+Diagnostic Test
++-----+--------------+--------------+-----------------------+----------+-------------------+----------------------+--------+-----------+---------+-------------+-------------+-----------------------------------------+
+|     |   Behavioral |   Biological |   Combination Product |   Device |   Diagnostic Test |   Dietary Supplement |   Drug |   Genetic |   Other |   Procedure |   Radiation | company                                 |
+|-----+--------------+--------------+-----------------------+----------+-------------------+----------------------+--------+-----------+---------+-------------+-------------+-----------------------------------------|
+|  15 |            0 |            3 |                     0 |        1 |                 3 |                    0 |     52 |         0 |       4 |           1 |           0 | AbbVie                                  |
+|  41 |            0 |            0 |                     0 |        0 |                 2 |                    0 |      0 |         0 |       0 |           0 |           0 | Adom Advanced Optical Technologies Ltd. |
+| 531 |            0 |            0 |                     0 |        0 |                 2 |                    0 |      0 |         0 |       0 |           0 |           0 | Inflamax Research Incorporated          |
+| 855 |            0 |            0 |                     0 |        1 |                 2 |                    0 |      1 |         0 |       1 |           1 |           0 | Prometheus Laboratories                 |
+| 262 |            0 |            0 |                     0 |        0 |                 1 |                    0 |      0 |         0 |       0 |           0 |           0 | Cepheid                                 |
++-----+--------------+--------------+-----------------------+----------+-------------------+----------------------+--------+-----------+---------+-------------+-------------+-----------------------------------------+
+Dietary Supplement
++------+--------------+--------------+-----------------------+----------+-------------------+----------------------+--------+-----------+---------+-------------+-------------+--------------------------------+
+|      |   Behavioral |   Biological |   Combination Product |   Device |   Diagnostic Test |   Dietary Supplement |   Drug |   Genetic |   Other |   Procedure |   Radiation | company                        |
+|------+--------------+--------------+-----------------------+----------+-------------------+----------------------+--------+-----------+---------+-------------+-------------+--------------------------------|
+|  664 |            0 |            0 |                     0 |        0 |                 0 |                    9 |      0 |         0 |       3 |           0 |           0 | Mead Johnson Nutrition         |
+|  329 |            0 |            0 |                     0 |        0 |                 0 |                    8 |      0 |         0 |       5 |           0 |           0 | DSM Nutritional Products, Inc. |
+|  129 |            0 |            0 |                     0 |        0 |                 0 |                    7 |      0 |         0 |       2 |           0 |           0 | Atlantia Food Clinical Trials  |
+|  269 |            0 |            0 |                     0 |        0 |                 0 |                    5 |      1 |         0 |       1 |           0 |           0 | Chemical Resources             |
+| 1063 |            0 |            0 |                     0 |        0 |                 0 |                    5 |      0 |         0 |       1 |           0 |           0 | Vedic Lifesciences Pvt. Ltd.   |
++------+--------------+--------------+-----------------------+----------+-------------------+----------------------+--------+-----------+---------+-------------+-------------+--------------------------------+
+Drug
++-----+--------------+--------------+-----------------------+----------+-------------------+----------------------+--------+-----------+---------+-------------+-------------+--------------------------+
+|     |   Behavioral |   Biological |   Combination Product |   Device |   Diagnostic Test |   Dietary Supplement |   Drug |   Genetic |   Other |   Procedure |   Radiation | company                  |
+|-----+--------------+--------------+-----------------------+----------+-------------------+----------------------+--------+-----------+---------+-------------+-------------+--------------------------|
+| 823 |            0 |           10 |                     0 |        0 |                 0 |                    0 |    122 |         0 |       4 |           2 |           0 | Pfizer                   |
+| 755 |            0 |            4 |                     0 |        0 |                 0 |                    0 |     96 |         0 |       3 |           0 |           0 | Novartis Pharmaceuticals |
+| 218 |            0 |           19 |                     0 |        0 |                 0 |                    0 |     95 |         0 |      15 |           1 |           4 | Bristol-Myers Squibb     |
+| 388 |            0 |            2 |                     0 |        2 |                 0 |                    0 |     90 |         0 |       0 |           0 |           0 | Eli Lilly and Company    |
+| 205 |            0 |            0 |                     0 |        0 |                 0 |                    0 |     85 |         0 |       1 |           0 |           2 | Boehringer Ingelheim     |
++-----+--------------+--------------+-----------------------+----------+-------------------+----------------------+--------+-----------+---------+-------------+-------------+--------------------------+
+Genetic
++------+--------------+--------------+-----------------------+----------+-------------------+----------------------+--------+-----------+---------+-------------+-------------+------------------------------+
+|      |   Behavioral |   Biological |   Combination Product |   Device |   Diagnostic Test |   Dietary Supplement |   Drug |   Genetic |   Other |   Procedure |   Radiation | company                      |
+|------+--------------+--------------+-----------------------+----------+-------------------+----------------------+--------+-----------+---------+-------------+-------------+------------------------------|
+|  357 |            0 |            0 |                     0 |        0 |                 0 |                    0 |      0 |         4 |       0 |           0 |           0 | Digna Biotech S.L.           |
+| 1048 |            0 |            0 |                     0 |        0 |                 0 |                    0 |      0 |         4 |       0 |           0 |           0 | UniQure N.V.                 |
+|  419 |            0 |            0 |                     0 |        0 |                 0 |                    0 |      0 |         1 |       0 |           0 |           0 | Fibrocell Technologies, Inc. |
+|  643 |            0 |            1 |                     0 |        0 |                 0 |                    0 |      2 |         1 |       0 |           0 |           0 | Lokon Pharma AB              |
+|  227 |            0 |            3 |                     0 |        0 |                 0 |                    0 |      1 |         1 |       0 |           0 |           0 | CSL Behring                  |
++------+--------------+--------------+-----------------------+----------+-------------------+----------------------+--------+-----------+---------+-------------+-------------+------------------------------+
+Other
++------+--------------+--------------+-----------------------+----------+-------------------+----------------------+--------+-----------+---------+-------------+-------------+----------------------------------+
+|      |   Behavioral |   Biological |   Combination Product |   Device |   Diagnostic Test |   Dietary Supplement |   Drug |   Genetic |   Other |   Procedure |   Radiation | company                          |
+|------+--------------+--------------+-----------------------+----------+-------------------+----------------------+--------+-----------+---------+-------------+-------------+----------------------------------|
+|  218 |            0 |           19 |                     0 |        0 |                 0 |                    0 |     95 |         0 |      15 |           1 |           4 | Bristol-Myers Squibb             |
+| 1049 |            3 |            0 |                     0 |        0 |                 0 |                    2 |      0 |         0 |      12 |           0 |           0 | Unilever R&amp;D                     |
+|  465 |            0 |           13 |                     0 |        2 |                 0 |                    0 |     75 |         0 |      12 |           2 |           0 | GlaxoSmithKline                  |
+|  467 |            0 |            1 |                     0 |        0 |                 0 |                    0 |      0 |         0 |       8 |           0 |           0 | Glycemic Index Laboratories, Inc |
+|  504 |            0 |            1 |                     0 |        3 |                 0 |                    0 |     67 |         0 |       7 |           0 |           0 | Hoffmann-La Roche                |
++------+--------------+--------------+-----------------------+----------+-------------------+----------------------+--------+-----------+---------+-------------+-------------+----------------------------------+
+Procedure
++-----+--------------+--------------+-----------------------+----------+-------------------+----------------------+--------+-----------+---------+-------------+-------------+-------------------------------+
+|     |   Behavioral |   Biological |   Combination Product |   Device |   Diagnostic Test |   Dietary Supplement |   Drug |   Genetic |   Other |   Procedure |   Radiation | company                       |
+|-----+--------------+--------------+-----------------------+----------+-------------------+----------------------+--------+-----------+---------+-------------+-------------+-------------------------------|
+| 126 |            0 |            6 |                     0 |        0 |                 0 |                    0 |     79 |         0 |       4 |          10 |           3 | AstraZeneca                   |
+| 210 |            0 |            0 |                     0 |       11 |                 0 |                    0 |      1 |         0 |       2 |           6 |           0 | Boston Scientific Corporation |
+|  19 |            0 |            0 |                     0 |       11 |                 0 |                    0 |      5 |         0 |       2 |           6 |           0 | Abbott Medical Devices        |
+|  84 |            0 |            0 |                     0 |        2 |                 0 |                    0 |      0 |         0 |       0 |           6 |           0 | Ambu A/S                      |
+| 566 |            0 |            0 |                     0 |        0 |                 0 |                    0 |      1 |         0 |       0 |           5 |           0 | Janssen Pharmaceuticals       |
++-----+--------------+--------------+-----------------------+----------+-------------------+----------------------+--------+-----------+---------+-------------+-------------+-------------------------------+
+Radiation
++-----+--------------+--------------+-----------------------+----------+-------------------+----------------------+--------+-----------+---------+-------------+-------------+---------------------------+
+|     |   Behavioral |   Biological |   Combination Product |   Device |   Diagnostic Test |   Dietary Supplement |   Drug |   Genetic |   Other |   Procedure |   Radiation | company                   |
+|-----+--------------+--------------+-----------------------+----------+-------------------+----------------------+--------+-----------+---------+-------------+-------------+---------------------------|
+| 218 |            0 |           19 |                     0 |        0 |                 0 |                    0 |     95 |         0 |      15 |           1 |           4 | Bristol-Myers Squibb      |
+| 694 |            0 |           17 |                     0 |        1 |                 0 |                    0 |     83 |         0 |       6 |           5 |           3 | Merck Sharp &amp; Dohme Corp. |
+| 126 |            0 |            6 |                     0 |        0 |                 0 |                    0 |     79 |         0 |       4 |          10 |           3 | AstraZeneca               |
+|  30 |            0 |            1 |                     0 |        0 |                 0 |                    0 |      1 |         0 |       1 |           0 |           2 | Accuray Incorporated      |
+| 370 |            0 |            0 |                     0 |        0 |                 0 |                    0 |      3 |         0 |       0 |           0 |           2 | ECRI bv                   |
++-----+--------------+--------------+-----------------------+----------+-------------------+----------------------+--------+-----------+---------+-------------+-------------+---------------------------+
+</pre>
+</div>
 </div>
 
 </div>

@@ -58,9 +58,9 @@ As shown in [figure 3], there are over 320, 846 trial records in clinicaltrials.
 
 <br>
 
-[1st Plot](../resource/data_exploration.html) <br>
+[1st Plot](../resource/data_exploration.html)  : Data exploration and find companies with the highest number of clinical trials <br>
 
-
+[2nd Plot](../resource/data_exploration_type_PCA.html) : Data exploration and clustering(grouping) companies based on the frequency of type of interventions(drug, device, biological, and more)
 
 
 

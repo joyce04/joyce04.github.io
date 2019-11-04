@@ -11,6 +11,8 @@ permalink: /about/proposal
 
 **Purpose**: Analyzing the clinical trial dataset to gain an understanding of the strategies of major pharmaceutical companies on new drug or intervention developments. <br>
 
+<br>
+
 <img src="../img/posts/image-20191104110650497.png" alt="image-20191104110650497" style="zoom:50%;" />
 
 [Figure 1] Stakeholders of Clinical Trials <br>
@@ -19,31 +21,43 @@ permalink: /about/proposal
 
 Starting from evaluating the change of strategies of different characteristics of companies investing in clinical trials, the project proposes to expand the analysis to concerns of more stakeholders. <br>
 
-![image-20191104121538956](../img/posts/image-20191104121538956.png)
+<br>
+
+<img src="../img/posts/image-20191104121538956.png" alt="image-20191104121538956" style="zoom:50%;" />
 
 
+
+<br>
 
 **Analysis Tools**: If provided, it is useful to utilize existing tools for faster analysis. There are multiple publications analyzing clinical trial data.
-(1)EXACT from BioNLP of Univ. Massa
+(1)EXACT from BioNLP of Univ. Massachusetts.
 
-
+<br>
 
 **Datasets**: <br>
 
-(1) Clinical trials - download xml : clinicaltrials.gov
+(1) Clinical trials - download xml : [clinicaltrials.gov](clinicaltrials.gov)
 As shown in [figure 3], there are over 320, 846 trial records in clinicaltrials.gov.
 
-![image-20191104111952955](../img/posts/image-20191104111952955.png)
+<img src="../img/posts/image-20191104111952955.png" alt="image-20191104111952955" style="zoom:50%;" />
 
-(2) Pharmaceutical companies - require crawling : https://en.wikipedia.org/wiki/List_of_largest_biotechnology_and_pharmaceutical_companies
+(2) Pharmaceutical companies - require crawling : [https://en.wikipedia.org/wiki/List_of_largest_biotechnology_and_pharmaceutical_companies](https://en.wikipedia.org/wiki/List_of_largest_biotechnology_and_pharmaceutical_companies)
 
-![image-20191104113216529](../img/posts/image-20191104113216529.png)
+<img src="../img/posts/image-20191104113216529.png" alt="image-20191104113216529" style="zoom:50%;" />
 
-(3) MeSH API -require API calls to retreive information of MeSH Terms(Condition, Product Names) : https://id.nlm.nih.gov/mesh/swagger/ui#/lookup/lookupTerms <br>
+(3) MeSH API -require API calls to retreive information of MeSH Terms(Condition, Product Names) : [https://id.nlm.nih.gov/mesh/swagger/ui#/lookup/lookupTerms](https://id.nlm.nih.gov/mesh/swagger/ui#/lookup/lookupTerms) <br>
 
 3.1) API GET "https://id.nlm.nih.gov/mesh/lookup/descriptor?label=multiple%20myeloma&match=exact&limit=10 <br>
 
-3.2) Craw https://id.nlm.nih.gov/mesh/D009101.html for information
+3.2) Craw [https://id.nlm.nih.gov/mesh/D009101.html](https://id.nlm.nih.gov/mesh/D009101.html) for information
+
+
+
+<br>
+
+<br>
+
+[1st Plot](../resource/data_exploration.html) <br>
 
 
 

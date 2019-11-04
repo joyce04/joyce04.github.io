@@ -11,7 +11,7 @@ permalink: /about/proposal
 
 **Purpose**: Analyzing the clinical trial dataset to gain an understanding of the strategies of major pharmaceutical companies on new drug or intervention developments. <br>
 
-![image-20191104110650497](../img/posts/image-20191104110650497.png)
+<img src="../img/posts/image-20191104110650497.png" alt="image-20191104110650497" style="zoom:50%;" />
 
 [Figure 1] Stakeholders of Clinical Trials <br>
 
@@ -23,14 +23,14 @@ Starting from evaluating the change of strategies of different characteristics o
 
 
 
-**Analysis Tools**: If provided, it is useful to utilize exisitng tools for faster analysis. There are multiple publications analyzing clinical trials data.
+**Analysis Tools**: If provided, it is useful to utilize existing tools for faster analysis. There are multiple publications analyzing clinical trial data.
 (1)EXACT from BioNLP of Univ. Massa
 
 
 
 **Datasets**: <br>
 
-(1) (1) Clinical trials - download xml : clinicaltrials.gov
+(1) Clinical trials - download xml : clinicaltrials.gov
 As shown in [figure 3], there are over 320, 846 trial records in clinicaltrials.gov.
 
 ![image-20191104111952955](../img/posts/image-20191104111952955.png)
@@ -47,4 +47,8 @@ As shown in [figure 3], there are over 320, 846 trial records in clinicaltrials.
 
 
 
-Fanshawe, Thomas R., and Rafael Perera. "Automatic extraction of quantitative data from ClinicalTrials. gov to conduct meta-analyses." *BMJ evidence-based medicine*(2019): bmjebm-2019.
+
+
+**Additional References**:
+
+[1] Fanshawe, Thomas R., and Rafael Perera. "Automatic extraction of quantitative data from ClinicalTrials. gov to conduct meta-analyses." *BMJ evidence-based medicine*(2019): bmjebm-2019.

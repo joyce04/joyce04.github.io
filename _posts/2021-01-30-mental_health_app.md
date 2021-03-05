@@ -9,5 +9,6 @@ featured_image: '/img/posts/mental_app.gif'
 project_link: [private]
 button_icon: 'github'
 button_text: 'Repository currently closed'
-lead_text: 'Mental Healthcare Mobile Application'
+lead_text: 'Mobile application with suicidal detection and mental disorder classification'
 ---
+

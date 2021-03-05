@@ -8,6 +8,6 @@ tags: flutter, python pandas machine_learning
 featured_image: '/img/posts/mental_app.gif'
 project_link: [private]
 button_icon: 'github'
-button_text: 'Visit Project'
+button_text: 'Repository currently closed'
 lead_text: 'Mental Healthcare Mobile Application'
 ---

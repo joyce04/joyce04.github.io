@@ -1,6 +1,6 @@
 title: "Hello. I'm Grace(Heasoo)."
 email: 'glee8804@gmail.com'
-description: "I'm a Ph.D student with machine learing focus at UCLA and software developer creating useful things for data science."
+description: "I'm a machine learning engineer and student who loves building interactive machine learning products. \nI recently developed a flutter app that lets users record and keeps track of their emotional status along with fine-tuned BERT model to classify any suicidal indication. I'd love to combine my passion for user interaction with my machine learning & software development skills to continue building personalized machine learning products for people."
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://joyce04.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: 'glee8804'
